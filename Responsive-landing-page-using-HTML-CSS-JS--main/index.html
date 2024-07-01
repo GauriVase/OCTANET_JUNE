@@ -1,178 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Landing Page using HTML, CSS & Javascript</title>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ==== STYLE.CSS ==== -->
-    <link rel="stylesheet" href="./css/style.css" />
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-    <!-- ====  REMIXICON CDN ==== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- ==== HEADER ==== -->
-    <header class="container header">
-      <!-- ==== NAVBAR ==== -->
-      <nav class="nav">
-        <div class="logo">
-          <h2>Devkit.</h2>
-        </div>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-        <div class="nav_menu" id="nav_menu">
-          <button class="close_btn" id="close_btn">
-            <i class="ri-close-fill"></i>
-          </button>
+        <title>Responsive landing page headphones</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
 
-          <ul class="nav_menu_list">
-            <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">account</a>
-            </li>
-            <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">about</a>
-            </li>
-            <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">service</a>
-            </li>
-            <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">contact</a>
-            </li>
-          </ul>
-        </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#specs" class="nav__link">Specs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#case" class="nav__link">Case</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>
+                    </ul>
 
-        <button class="toggle_btn" id="toggle_btn">
-          <i class="ri-menu-line"></i>
-        </button>
-      </nav>
-    </header>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
 
-    <section class="wrapper">
-      <div class="container">
-        <div class="grid-cols-2">
-          <div class="grid-item-1">
-            <h1 class="main-heading">
-              Welcome to <span>Devkit.</span>
-              <br />
-              Develop anything.
-            </h1>
-            <p class="info-text">
-              Build a beautiful, modern website with flexible components built
-              from scratch.
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div>
+                        <img src="assets/img/home.png" alt="" class="home__img">
+                    </div>
+                    
+                    <div class="home__data">
+                        <div class="home__header">
+                            <h1 class="home__title">Vibez</h1>
+                            <h2 class="home__subtitle">BOAT</h2>
+                        </div>
+
+                        <div class="home__footer">
+                            <h3 class="home__title-description">Overview</h3>
+                            <p class="home__description">Enjoy Experience the pinnacle of audio excellence with our Beats sound, combined with the unparalleled freedom of wireless listening. 
+                            </p>
+                            <a href="#" class="button button--flex">
+                                <span class="button--flex">
+                                    <i class="ri-shopping-bag-line button__icon"></i></i> Add to Bag
+                                </span>
+                                <span class="home__price">Rs.1000</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--=============== SPONSOR ===============-->
+            <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <img src="assets/img/sponsor1.png" alt="" class="sponsor__img">
+                    <img src="assets/img/sponsor2.png" alt="" class="sponsor__img">
+                    <img src="assets/img/sponsor3.png" alt="" class="sponsor__img">
+                    <img src="assets/img/sponsor4.png" alt="" class="sponsor__img">
+                </div>
+            </section>
+
+            <!--=============== SPECS ===============-->
+            <section class="specs section grid" id="specs">
+                <h2 class="section__title section__title-gradient">Specs</h2>
+
+                <div class="specs__container container grid">
+                    <div class="specs__content grid">
+                        <div class="specs__data">
+                            <i class="ri-bluetooth-line specs__icon"></i>
+                            <h3 class="specs__title">Connection</h3>
+                            <span class="specs__subtitle">Bluetooth v5.2</span>
+                        </div>
+    
+                        <div class="specs__data">
+                            <i class="ri-battery-charge-line specs__icon"></i>
+                            <h3 class="specs__title">Battery</h3>
+                            <span class="specs__subtitle">Duration 40h</span>
+                        </div>
+    
+                        <div class="specs__data">
+                            <i class="ri-plug-line specs__icon"></i>
+                            <h3 class="specs__title">Load</h3>
+                            <span class="specs__subtitle">Fast charge 4.2-AAC</span>
+                        </div>
+    
+                        <div class="specs__data">
+                            <i class="ri-mic-line specs__icon"></i>
+                            <h3 class="specs__title">Microphone</h3>
+                            <span class="specs__subtitle">Supports Apple Siri <br> and Google</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="assets/img/specs.png" alt="" class="specs__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== CASE ===============-->
+            <section class="case section grid" id="case">
+                <h2 class="section__title section__title-gradient">Case</h2>
+
+                <div class="case__container container grid">
+                    <div>
+                        <img src="assets/img/case.png" alt="" class="case__img">
+                    </div>
+
+                    <div class="case__data">
+                        <p class="case__description">With a comfortable and adaptable case so that you can 
+                            store it whenever you want, and keep your durability forever.
+                        </p>
+                        <a href="#" class="button button--flex">
+                            <i class="ri-information-line button__icon"></i> More info
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== DISCOUNT ===============-->
+            <section class="discount section">
+                <div class="discount__container container grid">
+                    <div class="discount__animate">
+                        <h2 class="discount__title">Immerse yourself in <br> your music</h2>
+                        <p class="discount__description">Get it now, up to 50% off.</p>
+                        <a href="#" class="button button--flex">
+                            <i class="ri-shopping-bag-line button__icon"></i> Shop Now
+                        </a>
+                    </div>
+
+                    <img src="assets/img/discount.png" alt="" class="discount__img">
+                </div>
+            </section>
+
+            <!--=============== PRODUCTS ===============-->
+            <section class="products section" id="products">
+                <h2 class="section__title section__title-gradient products__line">
+                    Choose <br> Your Style
+                </h2>
+
+                <div class="products__container container grid">
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/product1.png" alt="" class="products__img">
+    
+                            <h3 class="products__title">Black</h3>
+                            <span class="products__price">Rs.600</span>
+    
+                            <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/product2.png" alt="" class="products__img">
+    
+                            <h3 class="products__title">Red Black</h3>
+                            <span class="products__price">Rs.599</span>
+    
+                            <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/product3.png" alt="" class="products__img">
+    
+                            <h3 class="products__title">Night Black</h3>
+                            <span class="products__price">Rs.400</span>
+    
+                            <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/product4.png" alt="" class="products__img">
+    
+                            <h3 class="products__title">Blue</h3>
+                            <span class="products__price">Rs599</span>
+    
+                            <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/product5.png" alt="" class="products__img">
+    
+                            <h3 class="products__title">Twilight gray</h3>
+                            <span class="products__price">Rs.499</span>
+    
+                            <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER 
+            ===============-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <a href="#" class="footer__logo">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+    
+                <div class="footer__content">
+                    <h3 class="footer__title">Products</h3>
+    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Headphones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Earphones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Earbuds</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Accesories</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__content">
+                    <h3 class="footer__title">Support</h3>
+    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Product help</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Register</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Updates</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Provides</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__content">
+                    <form action="" class="footer__form">
+                        <input type="email" placeholder="Email" class="footer__input">
+                        <button class="button button--flex">
+                            <i class="ri-send-plane-line button__icon"></i> Subscribe
+                        </button>
+                    </form>
+    
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">
+                <a href="https://www.youtube.com/c/Bedimcode/" target="_blank" class="footer__copy-link">&#169; Bedimcode. All right reserved</a>
             </p>
+        </footer>
 
-            <div class="btn_wrapper">
-              <button class="btn view_more_btn">
-                view all pages <i class="ri-arrow-right-line"></i>
-              </button>
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-line scrollup__icon"></i>
+        </a>
+        
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-              <button class="btn documentation_btn">documentation</button>
-            </div>
-          </div>
-          <div class="grid-item-2">
-            <div class="team_img_wrapper">
-              <img src="./img/team.svg" alt="team-img" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="wrapper">
-      <div class="container" data-aos="fade-up" data-aos-duration="1000">
-        <div class="grid-cols-3">
-          <div class="grid-col-item">
-            <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <div class="featured_info">
-              <span class="title">Built for developers </span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                ratione facilis animi voluptas exercitationem molestiae.
-              </p>
-            </div>
-          </div>
-          <div class="grid-col-item">
-            <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <div class="featured_info">
-              <span class="title">Designed to be modern</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                ipsum esse corrupti. Quo, labore debitis!
-              </p>
-            </div>
-          </div>
-
-          <div class="grid-col-item">
-            <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                />
-              </svg>
-            </div>
-            <div class="featured_info">
-              <span class="title">Documentation for everything</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                nostrum voluptate totam ipsa corrupti vero!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer></footer>
-
-    <!-- ==== ANIMATE ON SCROLL JS CDN -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- ==== GSAP CDN ==== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <!-- ==== SCRIPT.JS ==== -->
-    <script src="./script.js" defer></script>
-  </body>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
 
